@@ -4,7 +4,7 @@
 
 This is a repository for a FullStack Netflix Clone tutorial using React, NextJS, TailwindCSS & Prisma.
 
-https://netflix-clone-sigma-seven.vercel.app/auth
+https://netflix-app-clone-6577ce9d82fe.herokuapp.com/auth
 
 
 
