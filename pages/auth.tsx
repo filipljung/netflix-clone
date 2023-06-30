@@ -40,7 +40,8 @@ const Auth = () => {
     setVariant((currentVariant) => currentVariant === 'login' ? 'register' : 'login');
   }, []);
 
-  const login = useCallback(async () => {
+  const login = useCallback(async (e : any) => {
+    e.prventDefault();
     try {
       setIsLoading(true);
       const res = await signIn('credentials', {
@@ -62,7 +63,8 @@ const Auth = () => {
     }
   }, [email, password, router]);
 
-  const register = useCallback(async () => {
+  const register = useCallback(async (e : any) => {
+    e.preventDefault();
     try {
       setIsLoading(true);
       await axios.post('/api/register', {
@@ -71,7 +73,7 @@ const Auth = () => {
         password
       });
 
-      login();
+      login(e);
     } catch (error: any) {
       setIsLoading(false);
       console.log(error);
