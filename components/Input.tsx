@@ -3,19 +3,23 @@ import React from 'react';
 interface InputProps {
   id: string;
   onChange: any;
+  onFocus?: any;
   value: string;
   label: string;
   type?: string;
+  isError?: boolean;
 }
 
-const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
+const Input: React.FC<InputProps> = ({ id, onChange, onFocus, isError, value, label, type }) => {
   return (
     <div className="relative">
       <input
         onChange={onChange}
+        onFocus={onFocus}
         value={value}
         type={type}
         id={id}
+        style={isError ? { border: '2px solid red' } : {}}
         className="
         block
         rounded-md
