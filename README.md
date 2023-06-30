@@ -59,6 +59,8 @@ npm run dev
 - add more movies
 - forgot password button
 
+## Special thanks to  @arslanrazzaq for help and mentor me in this project. 
+
 
 Running commands with npm `npm run [command]`
 
