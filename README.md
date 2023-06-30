@@ -55,7 +55,10 @@ NEXTAUTH_SECRET=
 npm run dev
 ```
 
-## Available commands
+## Future Implements
+- add more movies
+- forgot password button
+
 
 Running commands with npm `npm run [command]`
 
